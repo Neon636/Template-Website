@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap");
+
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        font-family: "Ubuntu", sans-serif;
+      }
+
+      .title {
+        font-family: "Ubuntu", sans-serif;
+        float: left;
+      }
+
+      .container {
+        max-width: 100%;
+
+        margin: 0 auto;
+      }
+
+      .header-container header {
+        background-color: #1a000d;
+        color: beige;
+        padding: 30px 10px 90px;
+      }
+
+      .home-logo {
+        float: left;
+        width: 200px;
+        height: 75px;
+        margin-top: -22px;
+        background-position: 0 2px;
+      }
+
+      img {
+        background-color: #1a000d;
+      }
+
+      .main-container {
+        margin: 0 auto;
+        height: 200px;
+
+        display: center;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        width: 30%;
+        float: left;
+        margin: 10px;
+        text-align: center;
+      }
+
+      .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+      }
+
+      .button-container {
+        height: 200px;
+        position: relative;
+      }
+
+      .center {
+        margin: 0;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+      }
+
+      button{
+        color: white;
+        background-color: black;
+        border-radius: 20px;
+        padding: 10px;
+        font-family: "Ubuntu", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header-container">
+        <header>
+          <div class="home-logo">
+            <a href="#" title="HL" class="home-logo-link">
+              <img
+                src="logo.png"
+                alt="home page logo"
+                width="150px"
+                height="100px"
+              />
+            </a>
+          </div>
+          <div class="title">
+            <h1>Online Templates</h1>
+          </div>
+        </header>
+      </div>
+
+      <div class="main-container">
+        <div class="card">
+          <img src="home.png" alt="Home Page" style="width: 100%" />
+          <div class="container">
+            <h4><b>Home Page Template</b></h4>
+            <p><a href="home.html" target="_blank">Demo</a></p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="about_us.png" alt="About Us Page" style="width: 100%" />
+          <div class="container">
+            <h4><b>About Us Page Template</b></h4>
+            <p><a href="aboutus.html" target="_blank">Demo</a></p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="contact_us.png" alt="Contact Us Page" style="width: 100%" />
+          <div class="container">
+            <h4><b>Contact Page Template</b></h4>
+            <p><a href="contact_us.html" target="_blank">Demo</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="button-container">
+      <div class="center">
+        <button onclick="myFunction()"><b>PURCHASE</b></button>
+      </div>
+    </div>
+
+    <script>
+      function myFunction() {
+        alert("Thank You for the purchase!!!");
+      }
+      </script>
+  </body>
+</html>

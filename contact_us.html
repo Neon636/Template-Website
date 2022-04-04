@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap");
+
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        font-family: "Ubuntu", sans-serif;
+        background: url("https://placeimg.com/640/480/tech");
+        background-size: cover;
+        background-color: #333;
+      }
+
+      .title {
+        font-family: "Ubuntu", sans-serif;
+        float: left;
+      }
+
+      .container {
+        max-width: 100%;
+        margin: 0 auto;
+      }
+
+      .header-container header {
+        background-color: #1a000d;
+        color: beige;
+        padding: 30px 10px 90px;
+      }
+
+      .home-logo {
+        float: left;
+        width: 200px;
+        height: 75px;
+        margin-top: -22px;
+        background-position: 0 2px;
+      }
+
+      label{
+          padding: 10px;
+      }
+
+      input{
+          margin: 10px;
+      }
+
+      input[type="submit"]{
+        border-radius: 20px;
+        padding: 10px;
+        font-family: "Ubuntu", sans-serif;
+      }
+
+      input[type="text"], input[type="email"], textarea{
+        border-radius: 20px;
+        padding: 10px;
+        font-family: "Ubuntu", sans-serif;
+      }
+
+      .col-1 {
+        width: fit-content;
+        padding: 40px;
+        margin:20px;
+        height: auto;
+        float: left;
+        background-color: rgba(225, 225, 225, 0.662);
+        border-radius: 20px;
+      }
+
+      .col-2 {
+        width: 30%;
+        padding: 20px;
+        margin: 20px;
+        height: auto;
+        float: left;
+        background-color: rgba(225, 225, 225, 0.662);
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header-container">
+        <header>
+          <div class="home-logo">
+            <a href="home.html" title="HL" class="home-logo-link">
+              <img
+                src="images.png"
+                alt="home page logo"
+                width="150px"
+                height="100px"
+              />
+            </a>
+          </div>
+          <div class="title">
+            <h1>Contact us</h1>
+          </div>
+        </header>
+      </div>
+
+      <div class="main-container">
+        <div class="col-1">
+            <form name="myForm" method="post">
+                <label for="uname">Your Name: </label>
+                <input type="text" name="uname" id="uname" placeholder="Name" required><br>
+                <label for="email">Your Email: </label>
+                <input type="email" name="email" id="email" placeholder="abc@gmail.com"><br>
+                <label for="message">Comments: </label><br>
+                <textarea name="message" id="message" style="width:400px;height:200px"></textarea>
+                <br><input type="submit" name="" value="Submit" onclick="return clicked();">
+              </form>
+        </div>
+        <div class="col-2">
+          <p>
+              <h3>Address: </h3>
+              <p>Lorem ipsum dolor sit amet. Aut voluptas velit aut saepe unde 33
+                eius natus ab minima labore est delectus saepe ut animi facere. Sit
+                odio labore quo omnis quibusdam qui veniam quibusdam est labore
+                delectus aut consectetur voluptatem.</p>
+          </p>
+          <p>
+              <h3>Mobile Number: </h3>
+              <p>8887779998</p>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function clicked() {
+        var agree=confirm("Are you sure you wish to continue?");
+        if (agree){
+          alert("Success!!!")
+          return true ;}
+        else{
+          alert("Failure!!!")
+          return false ;
+      }
+}
+    </script>
+  </body>
+</html>
